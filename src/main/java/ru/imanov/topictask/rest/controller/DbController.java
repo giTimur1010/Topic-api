@@ -19,7 +19,7 @@ public class DbController {
 
     private final TopicService topicService;
     @PostMapping
-    ResponseEntity<?> setUpDb(MessageWithoutTopicDto dto) {
+    ResponseEntity<?> setUpDb() {
 
         for (int i = 0; i < 100; ++i) {
             topicService.add(
